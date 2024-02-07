@@ -14,7 +14,7 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "url-shortener-frontend-ochre.vercel.app",
+    "https://url-shortener-frontend-ochre.vercel.app",
   ],
 };
 
@@ -50,6 +50,6 @@ app.get("/:shortId", async (req, res) => {
   }
 });
 
-app.listen(PORT|| process.env.PORT, () =>
+app.listen(PORT || process.env.PORT, () =>
   console.log(`Server Started at PORT:${PORT}`)
 );
